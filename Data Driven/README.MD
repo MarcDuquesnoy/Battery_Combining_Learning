@@ -67,7 +67,7 @@ locate inside this folder.
 Testing
 ========================================================
 _testing-model.py_ has to test the SISSO regression.
-After changing the path of the testing set associated to the output
+After changing the path of the testing set and SISSO.out associated to the output
 feature, it will calculate the goodness of fitting through the R2 score.
 Also, it uses a validation dataset with data never seen in the initial dataset.
 
