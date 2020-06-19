@@ -14,14 +14,11 @@ Setup
 We ask you to get a virtual environment such as **conda** for the Python exploration.
 Go to their webpage and download it. All dependencies will be
 installed on your environment.
-
-Example
-========================================================
-
 Because the SISSO method was implemented under Fortran, you need to switch 
-between the latter and Python for the analysis. 
+between the latter and Python for the analysis.
 
-##### Benchmarking
+Benchmarking
+=========================================================
 1. Launch _preprocessing.py_ with the corresponding path for the associated electrode generation
  dataset.
 2. Use the training set corresponding for one output feature for the SISSO
@@ -29,7 +26,18 @@ training.
 3. Launch _testing-model.py_ with the resulting file and the testing &
  validation set.
 
+Example for one output feature
+========================================================
 
+Inside this folder, SISSO ressources are provided for only **one** output feature
+(i.e. Active surface), in order to avoid repetitions of files.
+
+The example given provides :
+1. SISSO.out
+2. SISSO.in
+2. ./dat/train.dat
+3. ./dat/test.dat
+4. sisso.x
 
 SISSO
 ========================================================
@@ -51,6 +59,9 @@ executable.
 _SISSO.out_ is the output file that contains informations of the training with
 descriptors, coefficients and Root Mean Square Error (RMSE) for each dimensional projection. The one that
 minimize the RMSE will be chosen.
+
+**Note** : if the generation of the SISSO executable gets issues, please use the one
+locate inside this folder. 
 
 Testing
 ========================================================
