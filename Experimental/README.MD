@@ -10,14 +10,14 @@ Please, do not hesitate to discover the team of researchers behind the librairy 
 
 Setup
 ========================================================
-We ask you to get a version of RStudio greater than "1.2".
+We recommand you to get a version of RStudio greater than "1.2".
 
 
 Code
 ========================================================
 
-Regarding the available dataset inside the **./data/**, you can
- directly use the code inside the corresponding R file.
+Regarding the available dataset inside **./data**, you can
+ directly use the code for the corresponding R file.
 
 
  Authors

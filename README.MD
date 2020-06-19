@@ -2,7 +2,7 @@ Battery_Combining_Learning
 ========================================================
 
 Battery_Combining_Learning is a repository with all necessary
-informations and ressources experimental & stochastique analysis.
+informations and ressources for experimental & stochastique analysis.
 
 Please, do not hesitate to discover the team of researchers behind the librairy and also the ARTISTIC project
  involved : [ARTISTIC](https://www.u-picardie.fr/erc-artistic/?L=0)

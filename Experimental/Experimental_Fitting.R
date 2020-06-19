@@ -39,6 +39,6 @@ plot(model_fit)
 shapiro.test(resid(model_fit))
 
 acf(residuals(model_fit))
-
+    
 dwtest(model_fit)
 

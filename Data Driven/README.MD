@@ -14,6 +14,7 @@ Setup
 We ask you to get a virtual environment such as **conda** for the Python exploration.
 Go to their webpage and download it. All dependencies will be
 installed on your environment.
+
 Because the SISSO method was implemented under Fortran, you need to switch 
 between the latter and Python for the analysis.
 
@@ -23,14 +24,14 @@ Benchmarking
  dataset.
 2. Use the training set corresponding for one output feature for the SISSO
 training.
-3. Launch _testing-model.py_ with the resulting file and the testing &
+3. Launch _testing-model.py_ with the resulting file and the associated testing &
  validation set.
 
 Example for one output feature
 ========================================================
 
 Inside this folder, SISSO ressources are provided for only **one** output feature
-(i.e. Active surface), in order to avoid repetitions of files.
+(i.e. Active surface feature), in order to avoid repetitions of files.
 
 The example given provides :
 1. SISSO.out
@@ -48,7 +49,7 @@ repository where you will find all dependencies for a correct use of the method 
 Please, note that the corresponding **train.dat** represents one of the 
 six training files coming from the preprocessing step above.
 
-In a shell, launch the command line below to get the output file :
+In a shell, launch the command line below to get the output files :
 ```shell script
 mpirun -np xxx sisso.x >log
 ```
@@ -60,12 +61,12 @@ _SISSO.out_ is the output file that contains informations of the training with
 descriptors, coefficients and Root Mean Square Error (RMSE) for each dimensional projection. The one that
 minimize the RMSE will be chosen.
 
-**Note** : if the generation of the SISSO executable gets issues, please use the one
+**Note** : if the generation of the SISSO executable finds issues, please use the one
 locate inside this folder. 
 
 Testing
 ========================================================
-_testing-model.py_ has to test the SISSO analysis.
+_testing-model.py_ has to test the SISSO regression.
 After changing the path of the testing set associated to the output
 feature, it will calculate the goodness of fitting through the R2 score.
 Also, it uses a validation dataset with data never seen in the initial dataset.
